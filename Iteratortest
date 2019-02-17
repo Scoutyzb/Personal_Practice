@@ -1,0 +1,23 @@
+package day19;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class IteratorDemo {
+	public static void  function() {
+		List<String> a = new ArrayList<String>();
+		a.add("123");
+		a.add("456");
+		a.add("789");
+		System.out.println(a);
+		Iterator<String> it = a.iterator();
+		while(it.hasNext())   {
+			System.out.println(it.next());
+		}
+			
+	}
+	public static void main(String[] args) {
+		function();
+	}
+}
